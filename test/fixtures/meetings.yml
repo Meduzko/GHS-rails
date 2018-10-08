@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  announcement: MyText
+  agenda: MyText
+  consideration_docs: MyString
+  solutions: MyText
+  accepted_solutions: MyString
+
+two:
+  announcement: MyText
+  agenda: MyText
+  consideration_docs: MyString
+  solutions: MyText
+  accepted_solutions: MyString

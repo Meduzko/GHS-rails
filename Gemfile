@@ -36,6 +36,9 @@ gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
 
+gem 'activeadmin_addons'
+gem "paperclip", "~> 6.0.0"
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

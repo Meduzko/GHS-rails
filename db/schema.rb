@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_05_065937) do
+ActiveRecord::Schema.define(version: 2018_10_08_134858) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,31 @@ ActiveRecord::Schema.define(version: 2018_10_05_065937) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "meetings", force: :cascade do |t|
+    t.text "announcement"
+    t.text "agenda"
+    t.string "consideration_docs"
+    t.text "solutions"
+    t.string "accepted_solutions"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.string "title"
+    t.string "file_file_name"
+    t.string "file_content_type"
+    t.integer "file_file_size"
+    t.datetime "file_updated_at"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "document_file_name"
+    t.string "document_content_type"
+    t.integer "document_file_size"
+    t.datetime "document_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

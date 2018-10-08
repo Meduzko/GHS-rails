@@ -1,0 +1,42 @@
+<%= form_with(model: meeting, local: true) do |form| %>
+  <% if meeting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
+
+      <ul>
+      <% meeting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :announcement %>
+    <%= form.text_area :announcement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agenda %>
+    <%= form.text_area :agenda %>
+  </div>
+
+  <div class="field">
+    <%= form.label :consideration_docs %>
+    <%= form.text_field :consideration_docs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :solutions %>
+    <%= form.text_area :solutions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accepted_solutions %>
+    <%= form.text_field :accepted_solutions %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

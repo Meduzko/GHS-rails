@@ -2,10 +2,11 @@
 <div class="container">
 	<header class="header-group">
         <h2>Welcome </h2>
-        <a><%= link_to "Sign up", new_user_registration_path %></a>
-	<a><%= link_to "Login", new_user_session_path %></a>
-	<a><%= link_to "Edit profile", edit_user_registration_path %></a>
-	<a><%= link_to "Logout", destroy_user_session_path, method: :delete %> </a>
+	<h3><a><%= link_to "Open admin panel", new_admin_user_session_path %></a></h3>
+        <a><%= link_to "Sign up", new_user_registration_path %></a> <br>
+	<a><%= link_to "Login", new_user_session_path %></a><br>
+	<a><%= link_to "Edit profile", edit_user_registration_path %></a><br>
+	<a><%= link_to "Logout", destroy_user_session_path, method: :delete %> </a><br>
 	</header>
 	<div class="row">
 		<div class="col-md-12">

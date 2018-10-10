@@ -1,0 +1,8 @@
+<%= flash_messages %>
+<%= render :template => 'documents/index' %> 
+<%#= render :template => 'reports/index' %> 
+
+  <% if user_signed_in? %>
+   <%#= render :template => 'reports/index' %> 
+   loggined as user
+  <% end %>

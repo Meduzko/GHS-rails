@@ -1,0 +1,12 @@
+<h1>All Documents</h1>
+<% @documents.each do |document| %>
+    <h3><%= document.name %> </h3>
+    <h3><%= document.description %> </h3>
+     <h3><%= document.document_type %> </h3>
+      <h3><%= document.access %> </h3>
+       <h3><%= document.uploaded_file %> </h3>
+              <h3><%= document.created_at %> </h3>
+    <%= link_to 'Destroy', document, method: :delete %>
+<% end %>
+
+

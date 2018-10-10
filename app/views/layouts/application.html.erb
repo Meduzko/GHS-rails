@@ -43,9 +43,13 @@
 		 	</div>
 	  </div>
 	</nav>
-  <% if user_signed_in? %>
-    <h1>TEST ONLY FOR USERS</h1>
-  <% end %>
-    <%= yield %>
+  <%#= render partial: 'partials/header_block' %>
+<%#= render :partial => "reports/index", :locals => { :report => @report } %>
+<%#= render 'reports/breadcrumb', category: @category %>
+  
+  <%= yield %>
+  <%#= render partial: 'documents/fulldocs' %>
+  <%#= render :template => 'documents/index' %> 
+    <%#= render :template => 'reports/index' %> 
   </body>
 </html>

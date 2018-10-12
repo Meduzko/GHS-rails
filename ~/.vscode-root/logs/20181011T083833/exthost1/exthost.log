@@ -1,0 +1,52 @@
+[2018-10-11 08:38:41.920] [exthost] [info] extension host started
+[2018-10-11 08:38:42.027] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.027] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-10-11 08:38:42.051] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.051] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-10-11 08:38:42.216] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.216] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/git/dist/main
+[2018-10-11 08:38:42.718] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.718] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-10-11 08:38:42.741] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.741] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/search-rg/dist/extension
+[2018-10-11 08:38:42.759] [exthost] [info] ExtensionService#_doActivateExtension karigari.chat {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:42.759] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension
+[2018-10-11 08:38:44.706] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:44.706] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/ms-vsliveshare.vsliveshare-0.3.735/out/src/extension
+[2018-10-11 08:38:46.944] [exthost] [info] eager extensions activated
+[2018-10-11 08:38:47.383] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare-audio {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:47.383] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/ms-vsliveshare.vsliveshare-audio-0.1.32/out/extension
+[2018-10-11 08:38:58.529] [exthost] [info] extension host started
+[2018-10-11 08:38:58.608] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:58.609] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-10-11 08:38:58.628] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:58.629] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-10-11 08:38:58.757] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:58.757] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/git/dist/main
+[2018-10-11 08:38:59.212] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:59.212] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-10-11 08:38:59.241] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:59.241] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/search-rg/dist/extension
+[2018-10-11 08:38:59.259] [exthost] [info] ExtensionService#_doActivateExtension karigari.chat {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:38:59.259] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension
+[2018-10-11 08:39:00.838] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:39:00.838] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/ms-vsliveshare.vsliveshare-0.3.735/out/src/extension
+[2018-10-11 08:39:02.554] [exthost] [info] eager extensions activated
+[2018-10-11 08:39:03.424] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare-audio {"startup":true,"activationEvent":"*"}
+[2018-10-11 08:39:03.424] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/ms-vsliveshare.vsliveshare-audio-0.1.32/out/extension
+[2018-10-11 08:43:17.826] [exthost] [info] ExtensionService#_doActivateExtension rebornix.ruby {"startup":false,"activationEvent":"onLanguage:erb"}
+[2018-10-11 08:43:17.826] [exthost] [info] ExtensionService#loadCommonJSModule /home/mdz/.vscode/extensions/rebornix.ruby-0.20.0/out/ruby.js
+[2018-10-11 08:52:20.119] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-10-11 08:52:20.119] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/php-language-features/dist/phpMain
+[2018-10-11 11:14:13.590] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-10-11 11:14:13.590] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2018-10-11 11:14:13.627] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-10-11 11:14:13.627] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2018-10-11 11:14:13.755] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-10-11 11:14:13.756] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2018-10-11 11:14:13.933] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"activationEvent":"onLanguage:json"}
+[2018-10-11 11:14:13.933] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/npm/dist/main
+[2018-10-11 13:36:28.462] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-10-11 13:36:28.463] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2018-10-11 13:45:11.992] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2018-10-11 13:45:11.992] [exthost] [info] ExtensionService#loadCommonJSModule /snap/vscode/62/usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain

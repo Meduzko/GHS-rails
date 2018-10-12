@@ -3,6 +3,8 @@ class DocumentsController < ApplicationController
     def index
         @documents = Document.all
         @reports = Report.all
+        
+        @documents = Document.search(params[:term])
     end
     
 
@@ -29,7 +31,11 @@ class DocumentsController < ApplicationController
         redirect_to @document, notice: "Delete success"
       end
 
+   # def document_params
+        #params.require(:document).permit(:name, :description, :document_type, :access, :uploaded_file, :term)
+   # end
+
     private def document_params
-        params.require(:document).permit(:name, :description, :document_type, :access, :uploaded_file)
+        params.require(:document).permit(:name, :description, :document_type, :access, :uploaded_file, :term)
     end
 end

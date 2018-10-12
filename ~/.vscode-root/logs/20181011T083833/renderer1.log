@@ -1,0 +1,11 @@
+[2018-10-11 08:38:40.988] [renderer1] [info] no standard startup: not the explorer viewlet
+[2018-10-11 08:38:48.683] [renderer1] [error] Setup Team Chat to work for your account.: Error: Setup Team Chat to work for your account.
+    at /home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension.js:57:23
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension.js:4:58)
+    at <anonymous>
+[2018-10-11 08:39:04.576] [renderer1] [error] Setup Team Chat to work for your account.: Error: Setup Team Chat to work for your account.
+    at /home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension.js:57:23
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/mdz/.vscode/extensions/karigari.chat-0.6.3/out/extension.js:4:58)
+    at <anonymous>

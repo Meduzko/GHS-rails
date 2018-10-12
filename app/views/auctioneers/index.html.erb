@@ -1,0 +1,42 @@
+<h1>Auctioneers docs</h1>
+
+<%= form_tag(auctioneers_path, method: :get) do %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+  
+  
+  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Type</th>
+        <th scope="col">File</th>
+        <th scope="col">Created at</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @auctioneers.each do |auctioneer| %>
+  
+        <tr>
+        <th scope="row"></th>
+        <td><%= auctioneer.name %> </td>
+        <td><%= auctioneer.description %></td>
+        <td><%= auctioneer.document_type %></td>
+        <td><%= auctioneer.uploaded_file %></td>
+        <td><%= auctioneer.created_at %></td>
+      </tr>
+
+ 
+  <% end %>
+   <%#= link_to 'Destroy', auctioneer, method: :delete %>
+    </tbody>
+  </table>
+  
+  
+  
+  
+  

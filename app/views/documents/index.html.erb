@@ -1,12 +1,43 @@
 <h1>All Documents</h1>
-<% @documents.each do |document| %>
-    <h3><%= document.name %> </h3>
-    <h3><%= document.description %> </h3>
-     <h3><%= document.document_type %> </h3>
-      <h3><%= document.access %> </h3>
-       <h3><%= document.uploaded_file %> </h3>
-              <h3><%= document.created_at %> </h3>
-    <%= link_to 'Destroy', document, method: :delete %>
+
+<%= form_tag(documents_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag 'Search' %>
 <% end %>
+
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Type</th>
+    <th scope="col">Access</th>
+      <th scope="col">File</th>
+      <th scope="col">Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @documents.each do |document| %>
+
+        <tr>
+        <th scope="row"></th>
+        <td><%= document.name %> </td>
+        <td><%= document.description %></td>
+        <td><%= document.document_type %></td>
+        <td><%= document.access %></td>
+        <td><%= document.uploaded_file %></td>
+        <td><%= document.created_at %></td>
+      </tr>
+
+ 
+  <% end %>
+ <%#= link_to 'Destroy', document, method: :delete %>
+  </tbody>
+</table>
+
+
 
 

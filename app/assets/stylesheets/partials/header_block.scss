@@ -1,0 +1,20 @@
+@import "../partials/variables";
+@import "../general/fonts";
+
+header {
+    background-image: image-url('header.png');
+    background-position: 50%;
+    height: 500px;
+}
+
+
+div.partial-header {
+    p {
+        color: blue;
+        font-family: Montserrat-Black;
+    }
+    .second_test {
+        font-family: Montserrat-Light;
+        color: red;
+    }
+}

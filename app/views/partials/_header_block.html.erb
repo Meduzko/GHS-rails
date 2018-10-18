@@ -77,7 +77,7 @@
         <div class="uk-navbar-right uk-visible@m">
             <ul class="uk-navbar-nav">
                 <li>
-                <a class="uk-button uk-button-default " href="#">ДЛЯ АУКЦІОНЕРІВ</a>
+                <a class="uk-button uk-button-default " href="#" uk-toggle="target: #modal-close-default">ДЛЯ АУКЦІОНЕРІВ</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="#">Active</a></li>
@@ -92,6 +92,15 @@
                 </li>
             </ul>
         </div>
+
+        <!-- This is the modal with the default close button -->
+    <div id="modal-close-default" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Coming soon ...</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
     </nav>
 <h1 class="uk-h1 uk-position-center title">ПрАТ Нижньодністровська ГЕС</h1>
 <a class="button-down uk-position-bottom-left uk-position-large" uk-icon="arrow-down" href="#contacts" uk-scroll>ВНИЗ </a>

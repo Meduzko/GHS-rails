@@ -39,6 +39,8 @@ gem 'pundit'
 gem 'activeadmin_addons'
 gem "paperclip", "~> 6.0.0"
 
+gem "rails-uikit", git: 'git://github.com/nicbet/rails-uikit.git'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

@@ -1,0 +1,39 @@
+.history-chapter {
+    background-color: #ffffff;
+    .uk-container {
+        .uk-grid-match {
+            position: relative;
+
+            h3.history-title-inside {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+            }
+            h3 {
+              //  color: #fff;
+              color: #404040;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+            }
+            .history-img {
+              background-image: image-url("history_img.png");
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+            p.uk-h4 {
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+        hr {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-top: 2px solid #e5e5e5;
+        }
+    }
+}

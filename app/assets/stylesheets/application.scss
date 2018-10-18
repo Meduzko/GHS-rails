@@ -1,4 +1,6 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "uikit/variables-theme.scss";
+@import "uikit/mixins-theme.scss";
+@import "uikit/uikit-theme.scss";
 @import "auctioneers";
 @import "partials/header_block";
+@import "partials/history";

@@ -4,7 +4,52 @@
 header {
     background-image: image-url('header.png');
     background-position: 50%;
-    height: 500px;
+    height: 100vh;
+    nav {
+        padding-top: 20px;
+        .uk-navbar-left > ul {
+            margin-left: 15px;
+        }
+        .uk-navbar-right > ul {
+            margin-right: 15px;
+            li {
+                margin-right: 15px;
+            }
+        }
+        .uk-navbar-nav > li > a {
+            color: #fff;
+            height: 45px;
+            /*
+            &:hover:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 100%;
+                border-bottom: 1px solid #222;
+                transition: right .3s ease-out;
+            }
+            */
+        }
+    }
+    .title {
+        color: #fff;
+        margin-top: 0px;
+    }
+    .button-down {
+        color: #fff;
+        border:none;
+        &:hover {
+            color: #fff;
+        }
+        &:active {
+            color: #fff;
+        }
+        &.selected {
+            color: #fff;
+        }
+    }
+    
 }
 
 

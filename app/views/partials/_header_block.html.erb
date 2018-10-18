@@ -1,10 +1,102 @@
 <header>
+    <nav class="uk-navbar uk-navbar-transparent uk-margin">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="#">ІСТОРІЯ</a></li>
+                <li><a href="#">ДОКУМЕНТИ</a></li>
+                <li><a href="#">ОСОБЛИВА ІНФОРМАЦІЯ</a></li>
+                <li><a href="#">ЗВІТИ</a></li>
+                <li><a href="#">КОМАНДА</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+            </ul>
+
+            <div class="uk-offcanvas-content uk-hidden@m">
+            <a uk-navbar-toggle-icon class="uk-button uk-button-default uk-hidden@m" uk-toggle="target: #offcanvas-nav"></a>
+
+            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+            <!--
+            <a href="#offcanvas-slide" uk-navbar-toggle-icon class="uk-button uk-button-default uk-hidden@m" uk-toggle></a>
+                <div id="offcanvas-slide" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">ІСТОРІЯ</a></li>
+                            <li><a href="#">ДОКУМЕНТИ</a></li>
+                            <li><a href="#">ОСОБЛИВА ІНФОРМАЦІЯ</a></li>
+                            <li><a href="#">ЗВІТИ</a></li>
+                            <li><a href="#">КОМАНДА</a></li>
+                            <li><a href="#">КОНТАКТИ</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                -->   
+        </div>
+        <div class="uk-navbar-right uk-visible@m">
+            <ul class="uk-navbar-nav">
+                <li>
+                <a class="uk-button uk-button-default " href="#">ДЛЯ АУКЦІОНЕРІВ</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<h1 class="uk-h1 uk-position-center title">ПрАТ Нижньодністровська ГЕС</h1>
+<a class="button-down uk-position-bottom-left uk-position-large" uk-icon="arrow-down" href="#contacts" uk-scroll>ВНИЗ </a>
 
 </header>
-<h1>Hello from header block</h1>
-<div class="partial-header">
-    <p class="title">Asd 12345 asdfg</p>
-    <p class="second_test">Second test<p>
-</div>
+
 
 

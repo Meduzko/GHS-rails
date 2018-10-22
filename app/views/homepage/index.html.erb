@@ -1,17 +1,11 @@
+<%= flash_messages %>
 <%= render partial: 'partials/header_block' %>
 <%= render partial: 'partials/history' %>
 <%= render partial: 'partials/special_info' %>
 <%= render partial: 'partials/team' %>
 <%= render partial: 'partials/contacts' %>
 
-<%= flash_messages %>
+
 <%#= render :template => 'documents/index' %> 
 <%#= render :template => 'reports/index' %> 
 <%#= render :template => 'auctioneers/index' %> 
-
-
-
-  <% if user_signed_in? %>
-   <%#= render :template => 'reports/index' %> 
-   loggined as user
-  <% end %>

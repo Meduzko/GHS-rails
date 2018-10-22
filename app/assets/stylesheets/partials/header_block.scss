@@ -55,10 +55,18 @@ header {
             color: #fff;
         }
     }
-    
 }
 
-
+#modal-close-default {
+    .uk-modal-dialog {
+        .uk-modal-title {
+            text-align: center;
+        }
+        .popup-sign-block {
+            display: block;
+        }
+    }
+}
 div.partial-header {
     p {
         color: blue;

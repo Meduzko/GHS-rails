@@ -86,37 +86,72 @@
                     <% end %>
                     <% if user_signed_in? %>
                         <div class="uk-inline">
-                            <button class="uk-button uk-button-default" type="button">ПРОФІЛЬ</button>
-                            <div uk-dropdown="mode: click">
-                                <ul class="dropdown-menu">
-                                    <% if user_signed_in? %>
-                                        <li><%= link_to "Edit profile", edit_user_registration_path %></li>
-                                    <% else %>
-                                        <li><%= link_to "Sign up", new_user_registration_path %></li>
-                                        <li><%= link_to "Login", new_user_session_path %></li>
-                                    <% end %>
-                                    <% if user_signed_in? %>
-                                        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-                                    <% end %>
-                                </ul>
+                            <!--<button class="uk-button uk-button-default" type="button">ПРОФІЛЬ</button>-->
+                            <div class="uk-offcanvas-content">
+                                <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">ПРОФІЛЬ</button>
+                            </div>
+
+                            <div id="offcanvas-push" uk-offcanvas="mode: push; flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <%= image_tag(current_user.avatar.url(:thumb), :class => "uk-border-circle") %>
+
+                                    <ul class="uk-nav uk-nav-default">
+                                        <% if user_signed_in? %>
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                            <li class="uk-parent">
+                                                <a href="#">Parent</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+
+                                        <li class="round-image-50"></li>
+                                            <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+                                        <% else %>
+                                            <li><%= link_to "Sign up", new_user_registration_path %></li>
+                                            <li><%= link_to "Login", new_user_session_path %></li>
+                                        <% end %>
+                                        <% if user_signed_in? %>
+                                            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                                        <% end %>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     <% end %>
                     <% if admin_user_signed_in? %>
                         <div class="uk-inline">
-                            <button class="uk-button uk-button-default" type="button">АДМІН</button>
-                            <div uk-dropdown="mode: click">
-                                <ul class="dropdown-menu">
-                                    <% if admin_user_signed_in? %>
-                                        <li><%#= link_to "Edit profile", edit_admin_user_registration_path %></li>
-                                    <% else %>
-                                        <li><%#= link_to "Sign up", new_admin_user_registration_path %></li>
-                                        <li><%#= link_to "Login", new_admin_user_session_path %></li>
-                                    <% end %>
-                                    <% if admin_user_signed_in? %>
-                                        <li><%= link_to "Logout", destroy_admin_user_session_path, method: :delete %></li>
-                                    <% end %>
-                                </ul>
+                           <!-- <button class="uk-button uk-button-default" type="button">АДМІН</button> -->
+                            <div class="uk-offcanvas-content">
+                                <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">АДМІН</button>
+                            </div>
+
+                            <div id="offcanvas-push" uk-offcanvas="mode: push; flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar">
+
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                    <h3>Title</h3>
+                                    <ul class="dropdown-menu">
+                                        <% if admin_user_signed_in? %>
+                                            <li><%#= link_to "Edit profile", edit_admin_user_registration_path %></li>
+                                        <% else %>
+                                            <li><%#= link_to "Sign up", new_admin_user_registration_path %></li>
+                                            <li><%#= link_to "Login", new_admin_user_session_path %></li>
+                                        <% end %>
+                                        <% if admin_user_signed_in? %>
+                                            <li><%= link_to "Logout", destroy_admin_user_session_path, method: :delete %></li>
+                                        <% end %>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     <% end %>
@@ -136,6 +171,7 @@
                 </li>
             </ul>
         </div>
+
 
         <!-- This is the modal with the default close button -->
         <div id="modal-close-default" uk-modal>
@@ -157,7 +193,29 @@
 <h1 class="uk-h1 uk-position-center title">ПрАТ Нижньодністровська ГЕС</h1>
 <a class="button-down uk-position-bottom-left uk-position-large" uk-icon="arrow-down" href="#contacts" uk-scroll>ВНИЗ </a>
 
+
+    <div id="offcanvas-push" uk-offcanvas="mode: push; flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <h3>Title</h3>
+
+                                <ul class="dropdown-menu">
+                                    <% if admin_user_signed_in? %>
+                                        <li><%#= link_to "Edit profile", edit_admin_user_registration_path %></li>
+                                    <% else %>
+                                        <li><%#= link_to "Sign up", new_admin_user_registration_path %></li>
+                                        <li><%#= link_to "Login", new_admin_user_session_path %></li>
+                                    <% end %>
+                                    <% if admin_user_signed_in? %>
+                                        <li><%= link_to "Logout", destroy_admin_user_session_path, method: :delete %></li>
+                                    <% end %>
+                                </ul>
+
+        </div>
+    </div>
+
+
+
 </header>
-
-
-

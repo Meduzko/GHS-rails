@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :documents
   resources :auctioneers
   resources :homepage
-  devise_for :users
+  devise_for :users, controllers: { sessions: "users/sessions" }
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'homepage#index'

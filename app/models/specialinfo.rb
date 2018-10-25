@@ -1,0 +1,2 @@
+class Specialinfo < ApplicationRecord
+end

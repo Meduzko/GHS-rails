@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :specialinfos
   get 'auctioneers/index'
   resources :reports
   resources :meetings

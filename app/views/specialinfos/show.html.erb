@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @specialinfo.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @specialinfo.description %>
+</p>
+
+<p>
+  <strong>Document type:</strong>
+  <%= @specialinfo.document_type %>
+</p>
+
+<p>
+  <strong>Actioner access:</strong>
+  <%= @specialinfo.actioner_access %>
+</p>
+
+<%= link_to 'Edit', edit_specialinfo_path(@specialinfo) %> |
+<%= link_to 'Back', specialinfos_path %>

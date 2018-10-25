@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Specialinfos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Document type</th>
+      <th>User access</th>
+      <th>Actioner access</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @specialinfos.each do |specialinfo| %>
+      <tr>
+        <td><%= specialinfo.name %></td>
+        <td><%= specialinfo.description %></td>
+        <td><%= specialinfo.document_type %></td>
+
+        <td><%= specialinfo.actioner_access %></td>
+        <td><%= link_to 'Show', specialinfo %></td>
+        <td><%= link_to 'Edit', edit_specialinfo_path(specialinfo) %></td>
+        <td><%= link_to 'Destroy', specialinfo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Specialinfo', new_specialinfo_path %>

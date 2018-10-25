@@ -1,4 +1,7 @@
 ActiveAdmin.register Document do
+  menu label: "Документи"
+  index :title => "Документи"
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,7 +14,7 @@ ActiveAdmin.register Document do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :document_type, :actioner_access, :uploaded_file, :created_at, :doctype #specials_attributes: [:doctype]
+permit_params :name, :description, :document_type, :actioner_access, :uploaded_file, :created_at, :metatag, :doctype #specials_attributes: [:doctype]
 
 index do
     selectable_column
@@ -20,6 +23,7 @@ index do
     column "Опис", :description
     column "Категорія", :document_type
     column "Доступ", :actioner_access
+    column "Метатаг", :metatag
     attachment_column "Файл", :uploaded_file
     column "Дата створення", :created_at
     actions 
@@ -31,6 +35,7 @@ index do
       f.input :description
       f.input :document_type
       f.input :actioner_access
+      f.input :metatag
       f.input :uploaded_file, required: true, as: :file
       f.input :created_at, as: :date_time_picker
     end

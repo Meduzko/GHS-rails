@@ -32,7 +32,7 @@ class ReportsController < ApplicationController
   private
 
     def report_params
-      params.require(:report).permit(:title, :file, :content, :date, :document)
+      params.require(:report).permit(:title, :document, :content, :date, :actioner_access, :description, :name)
     end
 
 

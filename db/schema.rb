@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_124416) do
+ActiveRecord::Schema.define(version: 2018_10_24_162935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -91,6 +91,21 @@ ActiveRecord::Schema.define(version: 2018_10_23_124416) do
     t.integer "document_file_size"
     t.datetime "document_updated_at"
     t.date "date"
+  end
+
+  create_table "specialinfos", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "document_type"
+    t.boolean "actioner_access"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "specials", force: :cascade do |t|
+    t.string "doctype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

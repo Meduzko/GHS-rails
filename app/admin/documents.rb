@@ -11,18 +11,18 @@ ActiveAdmin.register Document do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :document_type, :access, :uploaded_file, :created_at
+permit_params :name, :description, :document_type, :access, :uploaded_file, :created_at, :doctype #specials_attributes: [:doctype]
 
 index do
     selectable_column
     id_column
-    column :name
-    column :description
-    column :document_type
-    column :access
-    attachment_column :uploaded_file
-    column :created_at
-    actions
+    column "Назва", :name
+    column "Опис", :description
+    column "Категорія", :document_type
+    column "Доступ", :access
+    attachment_column "Файл", :uploaded_file
+    column "Дата створення", :created_at
+    actions 
   end
 
   form do |f|
@@ -34,6 +34,18 @@ index do
       f.input :uploaded_file, required: true, as: :file
       f.input :created_at, as: :date_time_picker
     end
+   #f.inputs do
+     # f.has_many :specials do |c|
+      #  c.input :doctype
+    #  end
+  #  end
+   # f.inputs do
+    #  f.has_many :specials, heading: 'specials',
+           #                   allow_destroy: true,
+           #                   new_record: true do |a|
+     #   a.input :doctype
+     # end
+   # end
 
     f.actions
   end

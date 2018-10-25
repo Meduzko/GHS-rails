@@ -9,11 +9,17 @@ class DocumentsController < ApplicationController
     
 
     def new
-    
+
     end
 
     def show
         @document = Document.find(params[:id])
+        render json: @document
+
+       # respond_to do |format|
+         #   format.json 
+          #  render :partial => "documents/show.json"
+       # end
     end
 
     def create

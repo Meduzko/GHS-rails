@@ -32,6 +32,9 @@
         <i>Підтвердіть пароль</i><br />
           <%= f.password_field :password_confirmation, autocomplete: "off", class: "uk-input" %>
         </div>
+        <div class="uk-margin">
+         <%= f.text_field :approved %>
+         </div>
 
         <!--<div class="form-group">
           <%#= f.label :avatar, class: 'col-sm-2 control-label'  %>

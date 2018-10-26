@@ -1,4 +1,7 @@
 ActiveAdmin.register Report do
+  menu label: "Звіти"
+  index :title => "Звіти"
+  #menu parent: "Documents"
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,14 +14,18 @@ ActiveAdmin.register Report do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
- permit_params :title, :document, :content, :date
+ permit_params :title, :document, :content, :date, :actioner_access, :description, :metatag, :name
 
  index do
     selectable_column
     id_column
     column :title
+    column :name
+    column :description
     attachment_column :document
     column :content
+    column :actioner_access
+    column :metatag
     column :date
     actions
   end
@@ -26,8 +33,12 @@ ActiveAdmin.register Report do
   form do |f|
     f.inputs "Upload" do
       f.input :title
+      f.input :name
+      f.input :description
       f.input :document, required: true, as: :file
       f.input :content
+      f.input :actioner_access
+      f.input :metatag
       f.input :date, as: :date_time_picker
     end
 

@@ -1,4 +1,4 @@
-ActiveAdmin.register Meeting do
+ActiveAdmin.register User do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,5 +11,5 @@ ActiveAdmin.register Meeting do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :announcement, :agenda, :consideration_docs, :solutions, :accepted_solutions
+permit_params :email, :approved
 end

@@ -11,6 +11,26 @@
                         </form>
                     </div>
                     <dl class="uk-description-list uk-description-list-divider">
+
+                    <% @documents.each do |document| %>
+                            <% if !document.actioner_access? %>
+
+                                <dt><%= document.name %></dt>
+                                <dd><%= document.description %></dd>
+
+                            <% end %>
+
+                            <% if user_signed_in? %>
+                                <% if document.actioner_access? %>
+
+                                    <dt><%= document.name %></dt>
+                                    <dd><%= document.description %></dd>
+
+                                <% end %>
+                            <% end %>
+                        <% end %>
+
+
                         <dt>Description term</dt>
                         <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                         <dt>Description term</dt>
@@ -93,6 +113,26 @@
                         </form>
                     </div>
                     <dl class="uk-description-list uk-description-list-divider">
+
+                        <% @reports.each do |report| %>
+                            <% if !report.actioner_access? %>
+
+                                <dt><%= report.name %></dt>
+                                <dd><%= report.description %></dd>
+
+                            <% end %>
+
+                            <% if user_signed_in? %>
+                                <% if report.actioner_access? %>
+
+                                    <dt><%= report.name %></dt>
+                                    <dd><%= report.description %></dd>
+
+                                <% end %>
+                            <% end %>
+                        <% end %>
+
+
                         <dt>Description term</dt>
                         <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                         <dt>Description term</dt>

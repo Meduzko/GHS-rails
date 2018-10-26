@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+    if params[:approved] == "false"
+      @users = User.where(approved: false)
+    else
+      @users = User.all
+    end
   end
 
   # GET /users/1
@@ -73,6 +79,6 @@ class UsersController < ApplicationController
     #end
 
     def user_params
-      params.require(:user).permit(:avatar)
+      params.require(:user).permit(:avatar, :approved)
     end
 end

@@ -1,4 +1,7 @@
 ActiveAdmin.register Specialinfo do
+    menu label: "Особлива інформація"
+    index :title => "Особлива інформація"
+    #menu parent: "Documents"
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,5 +14,5 @@ ActiveAdmin.register Specialinfo do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :document_type, :actioner_access
+permit_params :name, :description, :document_type, :metatag, :actioner_access
 end

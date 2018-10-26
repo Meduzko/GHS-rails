@@ -20,34 +20,40 @@
                 justify-content: flex-start;
                 flex-direction: column;
                 text-align: left;
-                padding-top: 20px;
+                padding-top: 30px;
                 font-size: 34px;
                 word-spacing: 500px;
+                line-height: 1.2;
             }
             h3 {
-              //  color: #fff;
               color: #ffffff;
               text-transform: uppercase;
-              padding-top: 20px;
+              padding-top: 30px;
               font-size: 34px;
+              line-height: 0.4;
             }
             p {
                 display: flex;
                 justify-content: flex-start;
                 flex-direction: column;
                 text-align: left;
-                padding-top: 20px;
+                padding-top: 30px;
                 font-size: 14px;
-                padding-bottom: 20px;
+                padding-bottom: 0px;
+                line-height: 1.2;
+
             }
             .history-img {
-              background-image: image-url("history_img.png");
-              align-items: flex-start;
-              justify-content: flex-start;
+                background-image:linear-gradient(to top, rgba(9, 55, 66, 0.6), rgba(0, 116, 145, 0.6)), image-url("history_img.png");
+                align-items: flex-start;
+                justify-content: flex-start;
+                line-height: 0.4;              
             }
             p.uk-h4 {
                 color: #fff;
                 font-size: 34px;
+                line-height: 0.4;
+                padding-top: 30px;
             }
         }
         hr {

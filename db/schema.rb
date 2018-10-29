@@ -108,6 +108,12 @@ ActiveRecord::Schema.define(version: 2018_10_26_080945) do
     t.string "metatag"
   end
 
+  create_table "specials", force: :cascade do |t|
+    t.string "doctype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false

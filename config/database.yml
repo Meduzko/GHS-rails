@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: SGH_production
-  username: SGH
+  database: sgh_development
+  username: mdz
   password: <%= ENV['SGH_DATABASE_PASSWORD'] %>

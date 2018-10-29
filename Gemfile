@@ -31,6 +31,8 @@ gem 'jquery-rails'
 gem 'activeadmin'
 gem 'carrierwave', '~> 1.0'
 
+gem 'rails_12factor'
+
 # Plus integrations with:
 gem 'devise'
 gem 'cancan' # or cancancan

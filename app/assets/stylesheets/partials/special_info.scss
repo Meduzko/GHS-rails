@@ -1,11 +1,30 @@
 .special-info-chapter {
-    background: #fafafa;
+    background: #70b1b5;
     .uk-container {
+        color: #000;        
         .uk-grid-large {
             .uk-card {
+                background: #70b1b5;
+                h2 {
+                    height: 50px;
+                    color: #fff;
+                    display: flex;
+                    align-items: flex-end;
+                }
                 .uk-margin {
-                    form {
-                    width: 100%;
+                    form {                        
+                        span {
+                            color: #fff;
+                        }
+                        ::placeholder {
+                            color: #fff;
+                            font-size: 14px;
+                        }   
+                        input {
+                            
+                            height: 25px;
+                        }
+                        width: 100%;                        
                     }
                 }
             }

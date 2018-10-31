@@ -1,0 +1,69 @@
+            <div class="uk-card uk-card-default uk-card-body">
+            <h2>ЗВІТИ</h2>
+            <div class="uk-margin">
+                <form class="uk-search uk-search-default">
+                    <span class="uk-search-icon-flip" uk-search-icon></span>
+                    <input class="uk-search-input" type="search" placeholder="ПОШУК В РОЗДІЛІ">
+                </form>
+                <!--<%= form_tag(documents_path, method: :get) do %>
+                    <%= text_field_tag :term, params[:term] %>
+                    <%= submit_tag 'Search' %>-->
+                <% end %>
+            </div>
+            <dl class="uk-description-list uk-description-list-divider">
+        
+                <% @reports.each do |report| %>
+                    <% if !report.actioner_access? %>
+        
+                        <dt><%= report.name %></dt>
+                        <dd><%= report.description %></dd>
+        
+                    <% end %>
+        
+                    <% if user_signed_in? %>
+                        <% if report.actioner_access? %>
+        
+                            <dt><%= report.name %></dt>
+                            <dd><%= report.description %></dd>
+        
+                        <% end %>
+                    <% end %>
+                <% end %>
+        
+        <!--
+                                <dt>Description term</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+                                <dt>Description term</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                                <dt>Description term</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                                <dt></dt>
+                                -->
+            </dl>
+            <ul uk-accordion ="multiple: true">
+                <li class>
+                    <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 1</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 3</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 4</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>

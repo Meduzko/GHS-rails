@@ -41,6 +41,18 @@ header {
         color: #fff;
         margin-top: 0px;
         z-index: 2;
+        @include mobile-portrait-and-below {
+            font-size: 10px;
+        }
+        @include mobile-landscape-and-up {
+          font-size: 10px;
+        }
+        @include tablet-landscape-and-up {
+            font-size: 25px;
+        }
+        @include desktop-and-up {
+            font-size: 35px;
+        }
     }
     .button-down {
         color: #fff;

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_26_080945) do
+ActiveRecord::Schema.define(version: 2018_10_31_113832) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 2018_10_26_080945) do
     t.string "document_type"
     t.boolean "actioner_access"
     t.string "metatag"
+    t.string "category"
   end
 
   create_table "meetings", force: :cascade do |t|
@@ -96,6 +97,7 @@ ActiveRecord::Schema.define(version: 2018_10_26_080945) do
     t.text "description"
     t.boolean "actioner_access"
     t.string "metatag"
+    t.string "category"
   end
 
   create_table "specialinfos", force: :cascade do |t|
@@ -106,6 +108,7 @@ ActiveRecord::Schema.define(version: 2018_10_26_080945) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "metatag"
+    t.string "category"
   end
 
   create_table "specials", force: :cascade do |t|

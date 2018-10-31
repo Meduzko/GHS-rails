@@ -14,12 +14,13 @@ ActiveAdmin.register Document do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :document_type, :actioner_access, :uploaded_file, :created_at, :metatag, :doctype #specials_attributes: [:doctype]
+permit_params :name, :description, :document_type, :actioner_access, :uploaded_file, :created_at, :metatag, :doctype, :category #specials_attributes: [:doctype]
 
 index do
     selectable_column
     id_column
     column "Назва", :name
+    column "Категорія", :category
     column "Опис", :description
     column "Категорія", :document_type
     column "Доступ", :actioner_access
@@ -32,6 +33,7 @@ index do
   form do |f|
     f.inputs "Upload" do
       f.input :name
+      f.input :category, as: :select, collection: ['foo', 'bar', 'baz']
       f.input :description
       f.input :document_type
       f.input :actioner_access

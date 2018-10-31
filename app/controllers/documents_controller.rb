@@ -42,6 +42,6 @@ class DocumentsController < ApplicationController
    # end
 
     private def document_params
-        params.require(:document).permit(:name, :description, :document_type, :actioner_access, :uploaded_file, :term)
+        params.require(:document).permit(:name, :category, :description, :document_type, :actioner_access, :uploaded_file, :term)
     end
 end

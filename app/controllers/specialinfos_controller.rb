@@ -42,7 +42,7 @@ def destroy
   private
 
     def specialinfo_params
-      params.require(:specialinfo).permit(:name, :description, :document_type, :actioner_access)
+      params.require(:specialinfo).permit(:name, :category, :description, :document_type, :actioner_access)
     end
 end
 

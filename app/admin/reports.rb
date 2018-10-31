@@ -14,13 +14,14 @@ ActiveAdmin.register Report do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
- permit_params :title, :document, :content, :date, :actioner_access, :description, :metatag, :name
+ permit_params :title, :document, :content, :date, :actioner_access, :description, :metatag, :name, :category
 
  index do
     selectable_column
     id_column
     column :title
     column :name
+    column "Категорія", :category
     column :description
     attachment_column :document
     column :content
@@ -34,6 +35,7 @@ ActiveAdmin.register Report do
     f.inputs "Upload" do
       f.input :title
       f.input :name
+      f.input :category, as: :select, collection: ['foo', 'bar', 'baz']
       f.input :description
       f.input :document, required: true, as: :file
       f.input :content

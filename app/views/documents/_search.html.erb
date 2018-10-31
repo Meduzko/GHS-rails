@@ -5,9 +5,9 @@
             <span class="uk-search-icon-flip" uk-search-icon></span>
             <input class="uk-search-input" type="search" placeholder="ПОШУК В РОЗДІЛІ">
         </form>
-        <%= form_tag(documents_path, method: :get) do %>
+        <!--<%= form_tag(documents_path, method: :get) do %>
             <%= text_field_tag :term, params[:term] %>
-            <%= submit_tag 'Search' %>
+            <%= submit_tag 'Search' %>-->
         <% end %>
     </div>
     <dl class="uk-description-list uk-description-list-divider">
@@ -40,12 +40,30 @@
                         <dt></dt>
                         -->
     </dl>
-    <ul uk-accordion>
-        <li class="uk-open">
-            <a class="uk-accordion-title" href="#">БІЛЬШЕ ДОКУМЕНТІВ</a>
+    <ul uk-accordion ="multiple: true">
+        <li class>
+            <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 1</a>
             <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </li>
+        <li>
+            <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 2</a>
+            <div class="uk-accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 3</a>
+            <div class="uk-accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </li>
+        <li>
+                    <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 4</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
     </ul>
 </div>

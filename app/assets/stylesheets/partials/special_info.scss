@@ -1,8 +1,13 @@
 .special-info-chapter {
     background: #70b1b5;
     .uk-container {
-        color: #000;        
+               
         .uk-grid-large {
+            .uk-card-default {
+                background: #fff;
+                color: #000;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            }
             .uk-card {
                 background: #70b1b5;
                 h2 {
@@ -25,6 +30,28 @@
                             height: 25px;
                         }
                         width: 100%;                        
+                    }
+                }
+                .uk-accordion {
+                    color: #000;
+                    ::after {
+                        margin-right: 10px;
+                        padding-top: 5px;
+                    }
+                    li {
+                        
+                        
+                        .uk-accordion-title {
+                            font-size: 14px;
+                            color: #fff;
+                            line-height: 25px;
+                            padding-left: 5px;
+                            border: 1px solid #fff;
+                            ::after {
+                                color: #fff;
+                            }
+                        }
+                       
                     }
                 }
             }

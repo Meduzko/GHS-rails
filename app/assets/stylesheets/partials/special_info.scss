@@ -8,6 +8,11 @@
                 color: #000;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
             }
+            .uk-card-body {
+                @include mobile-only {
+                    padding: 30px 10px;
+                }
+            }
             .uk-card {
                 background: #70b1b5;
                 h2 {
@@ -15,6 +20,10 @@
                     color: #fff;
                     display: flex;
                     align-items: flex-end;
+                    @include mobile-only {
+                        font-weight: bold;
+                        font-size: 2.8rem;
+                    }
                 }
                 .uk-margin {
                     form {                        

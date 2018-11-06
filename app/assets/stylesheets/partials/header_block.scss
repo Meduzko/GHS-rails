@@ -41,11 +41,12 @@ header {
         color: #fff;
         margin-top: 0px;
         z-index: 2;
+        font-weight: bold;
         @include mobile-portrait-and-below {
-            font-size: 10px;
+            font-size: 15px;
         }
         @include mobile-landscape-and-up {
-            font-size: 10px;
+            font-size: 20px;
         }
         @include tablet-landscape-and-up {
             font-size: 25px;

@@ -7,10 +7,11 @@ header {
     height: 100vh;
     position: relative;
     nav {
-        padding-top: 20px;
+        padding-top: 40px;
         z-index: 2;
-        .uk-navbar-left > ul {
-            margin-left: 15px;
+        
+        .uk-navbar-left > ul {            
+            margin-left: 40px;
         }
         .uk-navbar-right > ul {
             margin-right: 15px;
@@ -20,7 +21,8 @@ header {
         }
         .uk-navbar-nav > li > a {
             color: #fff;
-            height: 45px;
+            height: 25px;
+            font-family: "Montserrat-Regular", sans-serif;
             /*
             &:hover:before {
                 content: "";
@@ -37,11 +39,21 @@ header {
             }
         }
     }
-    .title {
+    .uk-position-center {
+        top: 20%;
+        left: 55px;
+        transform: none;
+        @include mobile-only {
+            left: 25px;
+        }
+    }
+    .title {        
+        text-align: left;
         color: #fff;
         margin-top: 0px;
         z-index: 2;
-        font-weight: bold;
+        font-family: 'Montserrat-SemiBold', Sans-serif;
+        letter-spacing: 2px;
         @include mobile-portrait-and-below {
             font-size: 15px;
         }
@@ -52,7 +64,7 @@ header {
             font-size: 25px;
         }
         @include desktop-and-up {
-            font-size: 35px;
+            font-size: 32px;
         }
     }
     .button-down {
@@ -93,12 +105,12 @@ div.partial-header {
 }
 header:after {
     content: "";
-    background-color: #00454c;
+    background-color: #00180d;
     position: absolute;
     left: 0px;
     top: 0px;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.6;
     z-index: 1;
 }

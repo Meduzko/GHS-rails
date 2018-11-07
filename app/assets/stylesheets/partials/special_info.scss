@@ -12,6 +12,9 @@
                 @include mobile-only {
                     padding: 0px 10px;
                 }
+                @include desktop-and-up {
+                    padding: 20px 0px;
+                }
             }
             .uk-card {
                 background: #70b1b5;

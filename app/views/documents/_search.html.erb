@@ -12,23 +12,6 @@
     </div>
     <dl class="uk-description-list uk-description-list-divider">
 
-        <% @documents.each do |document| %>
-            <% if !document.actioner_access? %>
-
-                <dt><%= document.name %></dt>
-                <dd><%= document.description %></dd>
-
-            <% end %>
-
-            <% if user_signed_in? %>
-                <% if document.actioner_access? %>
-
-                    <dt><%= document.name %></dt>
-                    <dd><%= document.description %></dd>
-
-                <% end %>
-            <% end %>
-        <% end %>
 
 <!--
                         <dt>Description term</dt>
@@ -45,6 +28,23 @@
             <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 1</a>
             <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <% @documents.each do |document| %>
+                        <% if !document.actioner_access? %>
+
+                            <dt><%= document.name %></dt>
+                            <dd><%= document.description %></dd>
+
+                        <% end %>
+
+                        <% if user_signed_in? %>
+                            <% if document.actioner_access? %>
+
+                                <dt><%= document.name %></dt>
+                                <dd><%= document.description %></dd>
+
+                            <% end %>
+                        <% end %>
+                    <% end %>
             </div>
         </li>
         <li>

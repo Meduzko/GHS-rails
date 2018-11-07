@@ -12,24 +12,6 @@
             </div>
             <dl class="uk-description-list uk-description-list-divider">
         
-                <% @specialinfos.each do |specialinfo| %>
-                    <% if !specialinfo.actioner_access? %>
-        
-                        <dt><%= specialinfo.name %></dt>
-                        <dd><%= specialinfo.description %></dd>
-        
-                    <% end %>
-        
-                    <% if user_signed_in? %>
-                        <% if specialinfo.actioner_access? %>
-        
-                            <dt><%= specialinfo.name %></dt>
-                            <dd><%= specialinfo.description %></dd>
-        
-                        <% end %>
-                    <% end %>
-                <% end %>
-        
         <!--
                                 <dt>Description term</dt>
                                 <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
@@ -45,6 +27,23 @@
                     <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 1</a>
                     <div class="uk-accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <% @specialinfos.each do |specialinfo| %>
+                                    <% if !specialinfo.actioner_access? %>
+                        
+                                        <dt><%= specialinfo.name %></dt>
+                                        <dd><%= specialinfo.description %></dd>
+                        
+                                    <% end %>
+                        
+                                    <% if user_signed_in? %>
+                                        <% if specialinfo.actioner_access? %>
+                        
+                                            <dt><%= specialinfo.name %></dt>
+                                            <dd><%= specialinfo.description %></dd>
+                        
+                                        <% end %>
+                                    <% end %>
+                                <% end %>
                     </div>
                 </li>
                 <li>

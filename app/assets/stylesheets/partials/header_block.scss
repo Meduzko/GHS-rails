@@ -24,6 +24,7 @@ header {
                 margin-right: 15px;
             }
         }
+        
         .uk-navbar-nav > li > a {
             color: #fff;
             height: 25px;
@@ -76,19 +77,13 @@ header {
         color: #fff;
         border:none;
         z-index: 2;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
+        font-weight: normal;
         text-decoration: none;
-        &:hover {
-            color: #fff;
-        }
-        &:active {
-            color: #fff;
-        }
-        &.selected {
-            color: #fff;
-        }
-        
     }
+    .uk-icon > * {
+        transform: translate(0, -1.5px);
+    } 
 }
 
 #modal-close-default {
@@ -110,6 +105,11 @@ div.partial-header {
         font-family: Montserrat-Light;
         color: red;
     }
+}
+.underline_chapter {
+    color: #fff;
+    height: 3px;
+    width: 100%;
 }
 header:after {
     content: "";

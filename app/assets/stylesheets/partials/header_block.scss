@@ -9,9 +9,14 @@ header {
     nav {
         padding-top: 40px;
         z-index: 2;
+        letter-spacing: 1.5px;
+        
         
         .uk-navbar-left > ul {            
             margin-left: 40px;
+            li {
+                margin-right: 15px;
+            }
         }
         .uk-navbar-right > ul {
             margin-right: 15px;
@@ -71,6 +76,8 @@ header {
         color: #fff;
         border:none;
         z-index: 2;
+        letter-spacing: 1.5px;
+        text-decoration: none;
         &:hover {
             color: #fff;
         }
@@ -80,6 +87,7 @@ header {
         &.selected {
             color: #fff;
         }
+        
     }
 }
 

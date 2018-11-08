@@ -21,7 +21,7 @@
             h2 {
                 display: flex;
                 justify-content: flex-start;
-                padding-left: 40px;
+                padding-left: 0px;
                 @include mobile-only {
                     padding-left: 0px;
                     font-size: 42px;
@@ -29,7 +29,12 @@
                 }
             }
             .uk-width-2-3 {
+                padding-left: 25px;
+                @include mobile-only {
+                    padding-left: 15px;
+                }
                 .uk-child-width-1-3 {
+                    
                     div {
                         ul > li {
                             font-size: 14px;

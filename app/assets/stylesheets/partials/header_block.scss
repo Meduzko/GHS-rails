@@ -11,7 +11,14 @@ header {
         z-index: 2;
         letter-spacing: 1.5px;
         
-        
+        .uk-button-default {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            @include mobile-only {
+                border: 0px solid #e5e5e5;
+            }
+        }
         .uk-navbar-left > ul {            
             margin-left: 40px;
             li {
@@ -61,13 +68,16 @@ header {
         font-family: 'Montserrat-SemiBold', Sans-serif;
         letter-spacing: 2px;
         @include mobile-portrait-and-below {
-            font-size: 15px;
+            font-size: 14px;
+            font-weight: bold;
         }
         @include mobile-landscape-and-up {
-            font-size: 20px;
+            font-size: 17px;
+            font-weight: bold;
         }
         @include tablet-landscape-and-up {
             font-size: 25px;
+            font-weight: normal;
         }
         @include desktop-and-up {
             font-size: 32px;
@@ -121,4 +131,37 @@ header:after {
     width: 100%;
     opacity: 0.6;
     z-index: 1;
+}
+.uk-offcanvas-bar {
+    width: 100%;;
+    background-color: #519a9c;
+    padding: 40px 40px;
+    .uk-parent {
+        height: 65vh;
+        a {
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-family: 'Montserrat-SemiBold', Sans-serif;
+            color: #fff !important;
+            height: 30px;
+            border-bottom: 1px solid #fff;
+            padding-top: 15px;
+        }
+    }
+    .for_shareholder {
+        a {
+            font-size: 16px;
+            font-family: 'Montserrat-SemiBold', Sans-serif;
+            color: #fff !important;
+            letter-spacing: 1px;
+            .uk-margin-small-right {
+                margin-right: 0px !important;
+            }
+        }
+        border:1px solid #fff;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

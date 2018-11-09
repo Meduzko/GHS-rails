@@ -9,7 +9,7 @@
                 <li><a href="#">КОМАНДА</a></li>
                 <li><a href="#">КОНТАКТИ</a></li>
                 <% if user_signed_in? %>
-                    <li><a href="#">ДЛЯ АУКЦІОНЕРІВ</a></li>
+                    <li><a href="#">ДЛЯ АКЦІОНЕРІВ</a></li>
                 <% end %>
             </ul>
 
@@ -40,19 +40,18 @@
 
             <div id="offcanvas-nav" uk-offcanvas="overlay: true">
                 <div class="uk-offcanvas-bar">
-
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="#">МЕНЮ</a></li>
+                    <a class="uk-active" uk-icon="close" href="#"></a>
+                    <ul class="uk-nav uk-nav-default">                        
                         <li class="uk-parent">
-                            <a href="#">ІСТОРІЯ</a>
+                            <a href="#">ІСТОРІЯ КОМПАНІЇ</a>
                             <a href="#">ДОКУМЕНТИ</a>
                             <a href="#">ОСОБЛИВА ІНФОРМАЦІЯ</a>
                             <a href="#">ЗВІТИ</a>
                             <a href="#">КОМАНДА</a>
                             <a href="#">КОНТАКТИ</a>
                         </li>
-                        <li class="uk-nav-header">Увійти як</li>
-                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> АУКЦІОНЕР</a></li>
+                        <li class="uk-nav-header"></li>
+                        <li class="for_shareholder"><a href="#"><span class="uk-margin-small-right"></span> ДЛЯ АКЦІОНЕРІВ</a></li>
                         
                         <%#<li class="uk-nav-divider"></li>%>
                         <%#<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li> %>

@@ -31,9 +31,16 @@
             position: relative;
             div {
                 display: block;
-                p {
+                p { 
+                    font-size: 15px;
+                    line-height: 20px;
                     padding-bottom:0px;
-                    font-family:"Roboto-Regular", sans-serif;
+                    font-family: "Monserrat-SemiBold", sans-serif;
+                    @include mobile-only {
+                        color: #000;
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
                 }
             }
             h3.history-title-inside {

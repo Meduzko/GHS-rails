@@ -98,7 +98,7 @@ ActiveAdmin.setup do |config|
   # will call the method to return the path.
   #
   # Default:
-  config.logout_link_path = :destroy_admin_user_session_path
+  #config.logout_link_path = :destroy_admin_user_session_path
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
@@ -129,7 +129,7 @@ ActiveAdmin.setup do |config|
   # config.comments_order = 'created_at ASC'
   #
   # You can disable the menu item for the comments index page:
-  # config.comments_menu = false
+   config.comments_menu = false
   #
   # You can customize the comment menu:
   # config.comments_menu = { parent: 'Admin', priority: 1 }
@@ -282,7 +282,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  # config.footer = 'my custom footer text'
+   config.footer = 'ПрАТ Нижньодністровська ГЕС'
 
   # == Sorting
   #
@@ -290,12 +290,22 @@ ActiveAdmin.setup do |config|
   # You can inherit it with own class and inject it for all resources
   #
   # config.order_clause = MyOrderClause
+  #config.show_comments_in_menu = false
 
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add label: 'Dashboard', priority: 0
+      menu.add label: 'documents', priority: 3
+      menu.add label: 'reports', priority: 4
+      menu.add label: 'specialinfos', priority: 5
+      menu.add label: 'Users', priority: 6
+    end
+  end
   module ActiveAdmin::Devise::Controller
 
-    def root_path
-      "/"  #add your logic
-    end
+    #def root_path
+      #"/"  #add your logic
+    #end
   end
 
 end

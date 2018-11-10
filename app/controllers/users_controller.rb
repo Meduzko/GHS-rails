@@ -79,6 +79,6 @@ class UsersController < ApplicationController
     #end
 
     def user_params
-      params.require(:user).permit(:avatar, :approved)
+      params.require(:user).permit(:email, :created_at, :avatar, :approved)
     end
 end

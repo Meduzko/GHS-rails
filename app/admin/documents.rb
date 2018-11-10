@@ -1,6 +1,11 @@
 ActiveAdmin.register Document do
   menu label: "Документи"
-  index :title => "Документи"
+
+  config.clear_action_items!
+  action_item :only => :index do
+      link_to "Додати документ" , "/admin/documents/new" 
+  end
+  #index :title => "Документи"
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -14,16 +19,15 @@ ActiveAdmin.register Document do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :document_type, :actioner_access, :uploaded_file, :created_at, :metatag, :doctype, :category #specials_attributes: [:doctype]
+permit_params :name, :description, :category, :actionner_access, :uploaded_file, :created_at, :metatag, :doctype, :category #specials_attributes: [:doctype]
 
-index do
+index :title => 'Документи' do
     selectable_column
     id_column
     column "Назва", :name
     column "Категорія", :category
     column "Опис", :description
-    column "Категорія", :document_type
-    column "Доступ", :actioner_access
+    column "Доступ", :actionner_access
     column "Метатаг", :metatag
     attachment_column "Файл", :uploaded_file
     column "Дата створення", :created_at
@@ -32,14 +36,13 @@ index do
 
   form do |f|
     f.inputs "Upload" do
-      f.input :name
-      f.input :category, as: :select, collection: ['foo', 'bar', 'baz']
-      f.input :description
-      f.input :document_type
-      f.input :actioner_access
-      f.input :metatag
-      f.input :uploaded_file, required: true, as: :file
-      f.input :created_at, as: :date_time_picker
+      f.input :name, label: "Назва"
+      f.input :category, as: :select, collection: ['foo', 'bar', 'baz'], label: "Категорія"
+      f.input :description, label: "Опис"
+      f.input :actionner_access, label: "Доступ лише для акціонерів"
+      f.input :metatag, label: "Метатаг"
+      f.input :uploaded_file, required: true, as: :file, label: "Документ"
+      f.input :created_at, as: :date_time_picker, label: "Дата"
     end
    #f.inputs do
      # f.has_many :specials do |c|

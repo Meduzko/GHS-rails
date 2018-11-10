@@ -29,7 +29,7 @@
             <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <% @documents.each do |document| %>
-                        <% if !document.actionner_access? %>
+                        <% if !document.actioner_access? %>
 
                             <dt><%= document.name %></dt>
                             <dd><%= document.description %></dd>
@@ -37,7 +37,7 @@
                         <% end %>
 
                         <% if user_signed_in? %>
-                            <% if document.actionner_access? %>
+                            <% if document.actioner_access? %>
 
                                 <dt><%= document.name %></dt>
                                 <dd><%= document.description %></dd>

@@ -1,0 +1,427 @@
+#uk:
+ # activerecord:
+  #  models:
+  #    comment:
+   #     one: "Comment"
+    #    other: "Comments"
+    #  active_admin/comment:
+    #    one: "Comment"
+    #    other: "Comments"
+   # attributes:
+   #   active_admin/comment:
+   #     author_type: "Author type"
+   #     body: "Body"
+     #   created_at: "Created"
+   #     namespace: "Namespace"
+     #   resource_type: "Resource type"
+    #    updated_at: "Updated"
+  uk:
+  activerecord:
+    models:
+      'my_engine/mymodel':
+        one: TranslatedMyModel
+        other: TranslatedMyModels
+    attributes:
+      'my_engine/mymodel':
+        myattribute: translated attribute
+    errors:
+      messages:
+        record_invalid: 'Виникли помилки: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Неможливо видалити запис, так як існує залежність: %{record}'
+          has_many: 'Неможливо видалити запис, так як існують залежності: %{record}'
+  date:
+    abbr_day_names:
+    - нд.
+    - пн.
+    - вт.
+    - ср.
+    - чт.
+    - пт.
+    - сб.
+    abbr_month_names:
+    -
+    - січ.
+    - лют.
+    - бер.
+    - квіт.
+    - трав.
+    - черв.
+    - лип.
+    - серп.
+    - вер.
+    - жовт.
+    - лист.
+    - груд.
+    day_names:
+    - неділя
+    - понеділок
+    - вівторок
+    - середа
+    - четвер
+    - п'ятниця
+    - субота
+    formats:
+      default: "%d.%m.%Y"
+      long: "%d %B %Y"
+      short: "%d %b"
+    month_names:
+    -
+    - Січня
+    - Лютого
+    - Березня
+    - Квітня
+    - Травня
+    - Червня
+    - Липня
+    - Серпня
+    - Вересня
+    - Жовтня
+    - Листопада
+    - Грудня
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: близько %{count} години
+        many: близько %{count} годин
+        one: близько %{count} година
+        other: близько %{count} години
+      about_x_months:
+        few: близько %{count} місяців
+        many: близько %{count} місяців
+        one: близько %{count} місяця
+        other: близько %{count} місяця
+      about_x_years:
+        few: близько %{count} років
+        many: близько %{count} років
+        one: близько %{count} року
+        other: близько %{count} року
+      almost_x_years:
+        few: майже %{count} років
+        many: майже %{count} років
+        one: майже %{count} роки
+        other: майже %{count} років
+      half_a_minute: півхвилини
+      less_than_x_minutes:
+        few: менше %{count} хвилин
+        many: менше %{count} хвилин
+        one: менше %{count} хвилини
+        other: менше %{count} хвилини
+      less_than_x_seconds:
+        few: менше %{count} секунд
+        many: менше %{count} секунд
+        one: менше %{count} секунди
+        other: менше %{count} секунди
+      over_x_years:
+        few: більше %{count} років
+        many: більше %{count} років
+        one: більше %{count} року
+        other: більше %{count} року
+      x_days:
+        few: "%{count} дні"
+        many: "%{count} днів"
+        one: "%{count} день"
+        other: "%{count} дня"
+      x_minutes:
+        few: "%{count} хвилини"
+        many: "%{count} хвилин"
+        one: "%{count} хвилина"
+        other: "%{count} хвилини"
+      x_months:
+        few: "%{count} місяці"
+        many: "%{count} місяців"
+        one: "%{count} місяць"
+        other: "%{count} місяця"
+      x_years:
+        few: "%{count} роки"
+        many: "%{count} років"
+        one: "%{count} рік"
+        other: "%{count} року"
+      x_seconds:
+        few: "%{count} секунди"
+        many: "%{count} секунд"
+        one: "%{count} секунда"
+        other: "%{count} секунди"
+    prompts:
+      day: День
+      hour: Година
+      minute: Хвилина
+      month: Місяць
+      second: Секунда
+      year: Рік
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: має бути прийнятий
+      blank: не може бути пустим
+      present: має бути пустим
+      confirmation: не збігається з підтвердженням
+      empty: не може бути порожнім
+      equal_to: має дорівнювати %{count}
+      even: має бути парним
+      exclusion: зарезервовано
+      greater_than: має бути більше ніж %{count}
+      greater_than_or_equal_to: має бути більше ніж або дорівнювати %{count}
+      inclusion: не включено до переліку
+      invalid: недійсний
+      less_than: має бути менше ніж %{count}
+      less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
+      model_invalid: 'Виникли помилки: %{errors}'
+      not_a_number: не число
+      not_an_integer: не є цілим числом
+      odd: має бути непарним
+      required: не може бути порожнім
+      taken: вже зайнятий
+      too_long:
+        few: занадто довгий (максимум %{count} знаки)
+        many: занадто довгий (максимум %{count} знаків)
+        one: занадто довгий (максимум %{count} знак)
+        other: занадто довгий (максимум %{count} знаку)
+      too_short:
+        few: занадто короткий (мінімум %{count} знаки)
+        many: занадто короткий (мінімум %{count} знаків)
+        one: занадто короткий (мінімум %{count} знак)
+        other: занадто короткий (мінімум %{count} знаку)
+      wrong_length:
+        few: неправильна довжина (має бути %{count} знаки)
+        many: неправильна довжина (має бути %{count} знаків)
+        one: неправильна довжина (має бути %{count} знак)
+        other: неправильна довжина (має бути %{count} знаку)
+      other_than: має відрізнятись від %{count}
+    template:
+      body: 'Помилки виявлено в таких полях:'
+      header:
+        few: "%{model} не збережено через %{count} помилки"
+        many: "%{model} не збережено через %{count} помилок"
+        one: "%{model} не збережено через %{count} помилку"
+        other: "%{model} не збережено через %{count} помилки"
+  helpers:
+    select:
+      prompt: 'Оберіть: '
+    submit:
+      create: Створити %{model}
+      submit: Зберегти %{model}
+      update: Зберегти %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: грн.
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            few: Мільярдів
+            many: Мільярдів
+            one: Мільярд
+            other: Мільярдів
+          million:
+            few: Мільйонів
+            many: Мільйонів
+            one: Мільйон
+            other: Мільйонів
+          quadrillion:
+            few: Квадрильйонів
+            many: Квадрильйонів
+            one: Кквадрильйон
+            other: Квадрильйонів
+          thousand:
+            few: Тисяч
+            many: Тисяч
+            one: Тисяча
+            other: Тисяч
+          trillion:
+            few: Трильйонів
+            many: Трильйонів
+            one: Трильйон
+            other: Трильйонів
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            few: байти
+            many: байтів
+            one: байт
+            other: байту
+          gb: ГБ
+          kb: кБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " та "
+      two_words_connector: " і "
+      words_connector: ", "
+  time:
+    am: до полудня
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: по полудні
+  active_admin:
+    dashboard: "Панель керування"
+    dashboard_welcome:
+      welcome: "Ласкаво просимо до Active Admin. Це стандартна сторінка керування сайтом."
+      call_to_action: "Щоб додати сюди що-небудь, зазирніть у 'app/admin/dashboard.rb'"
+    view: "Переглянути"
+    edit: "Змінити"
+    delete: "Видалити"
+    delete_confirmation: "Ви впевнені, що хочете це видалити?"
+    new_model: "Створити %{model}"
+    edit_model: "Змінити %{model}"
+    delete_model: "Видалити %{model}"
+    details: "%{model} детальніше"
+    cancel: "Скасувати"
+    empty: "Пусто"
+    previous: "Поперед."
+    next: "Наст."
+    download: "Завантаження:"
+    has_many_new: "Додати %{model}"
+    has_many_delete: "Прибрати"
+    has_many_remove: "Видалити"
+    filters:
+      buttons:
+        filter: "Фільтрувати"
+        clear: "Очистити"
+      predicates:
+        contains: "Містить"
+        equals: "="
+        starts_with: "Починається з"
+        ends_with: "Закінчується"
+        greater_than: "більше"
+        less_than: "менше"
+        from: "З"
+        to: "По"
+    scopes:
+      all: "Усі"
+    search_status:
+      headline: "Статус пошуку:"
+      current_scope: "Область:"
+      current_filters: "Поточний фільтр:"
+      no_current_filters: "Жоден"
+    status_tag:
+      "yes": "Так"
+      "no": "Ні"
+    main_content: "Створіть %{model}#main_content для відображення вмісту."
+    logout: "Вийти"
+    powered_by: "Powered by %{active_admin} %{version}"
+    sidebars:
+      filters: "Фільтри"
+      search_status: "Статус пошуку"
+    pagination:
+      empty: "%{model} не знайдено"
+      one: "Результат: <b>1</b> %{model}"
+      one_page: "Результат: <b>%{n}</b> %{model}"
+      multiple: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> з <b>%{total}</b>"
+      multiple_without_total: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      entry:
+        one: "запис"
+        few: "записи"
+        many: "записів"
+        other: "записів"
+    any: "Будь-який"
+    blank_slate:
+      content: "Поки-що немає %{resource_name}."
+      link: "Створити"
+    dropdown_actions:
+      button_label: "Oперації"
+    batch_actions:
+      button_label: "Групові операції"
+      default_confirmation: "Ви справді бажаєте це зробити?"
+      delete_confirmation: "Ви впевнені, що хочете видалити %{plural_model}?"
+      succesfully_destroyed:
+        one: "Успішно видалено: 1 %{model}"
+        few: "Успішно видалено: %{count} %{plural_model}"
+        many: "Успішно видалено: %{count} %{plural_model}"
+        other: "Успішно видалено: %{count} %{plural_model}"
+      selection_toggle_explanation: "(Скасувати все / Зняти виділення)"
+      action_label: "%{title} вибране"
+      labels:
+        destroy: "Видалити"
+    comments:
+      resource_type: "Тип ресурса"
+      author_type: "Тип автора"
+      body: "Текст"
+      author: "Автор"
+      add: "Додати Коментар"
+      resource: "Ресурс"
+      no_comments_yet: "Поки-що немає коментарів."
+      author_missing: "Анонім"
+      title_content: "Коментарі (%{count})"
+      errors:
+        empty_text: "Коментар не збережено, текст не повинен бути пустим."
+    devise:
+      username:
+        title: "Ім'я користувача"
+      email:
+        title: "Електронна пошта"
+      subdomain:
+        title: "Піддомен"
+      password:
+        title: "Пароль"
+      sign_up:
+        title: "Зареєструватися"
+        submit: "Зареєструватися"
+      login:
+        title: "Вхід"
+        remember_me: "Запам'ятати мене"
+        submit: "Увійти"
+      reset_password:
+        title: "Забули пароль?"
+        submit: "Скинути пароль"
+      change_password:
+        title: "Зміна паролю"
+        submit: "Змінити пароль"
+      unlock:
+        title: "Відправити повторно інструкції з розблокування"
+        submit: "Відправити повторно інструкції з розблокування"
+      resend_confirmation_instructions:
+        title: "Відправити повторно листа з активацією"
+        submit: "Відправити повторно листа з активацією"
+      links:
+        sign_up: "Зареєструватись"
+        sign_in: "Увійти"
+        forgot_your_password: "Забули пароль?"
+        sign_in_with_omniauth_provider: "Увійти з допомогою %{provider}"
+        resend_unlock_instructions: "Повторна відправка інструкцій розблокування"
+        resend_confirmation_instructions: "Повторна відправка інструкцій підтвердження"
+    unsupported_browser:
+      headline: "Зверніть, будь-ласка, увагу, що ActiveAdmin більше не підтримує Internet Explorer 8 версії і нижче"
+      recommendation: "Ми рекомендуємо оновити версію вашого браузеру (<a href=\"http://windows.microsoft.com/ie\">Internet Explorer</a>, <a href=\"https://chrome.google.com/\">Google Chrome</a>, або <a href=\"https://mozilla.org/firefox/\">Firefox</a>)."
+      turn_off_compatibility_view: "Якщо ви використовуєте IE 9 і вище, переконайтесь, що <a href=\"https://support.microsoft.com/uk-ua/help/17471\">ви вимкнули опцію \"Перегляд в режимі сумісності\"</a>."
+    access_denied:
+      message: "Ви не авторизовані для виконання даної дії."
+    index_list:
+      table: "Таблиця"
+      block: "Список"
+      grid: "Сітка"
+      blog: "Блог"

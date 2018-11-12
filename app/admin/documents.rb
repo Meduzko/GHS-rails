@@ -24,7 +24,8 @@ permit_params :name, :description, :category, :actioner_access, :uploaded_file, 
 index :title => 'Документи' do
     selectable_column
     id_column
-    column "Назва", :name
+   # column "Назва", :name
+    column :name
     column "Категорія", :category
     column "Опис", :description
     column "Доступ", :actioner_access

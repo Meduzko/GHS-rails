@@ -33,6 +33,9 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'rails_12factor'
 
+gem 'rails-i18n'
+gem 'jquery-ui-rails'
+
 # Plus integrations with:
 gem 'devise'
 gem 'cancan' # or cancancan

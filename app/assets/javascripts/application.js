@@ -14,8 +14,9 @@
 //= require jquery_ujs
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery-ui
 //= require "uikit"
+
 $( document ).ready(function() {
     $(".alert" ).fadeOut(3000);
     $(".alert-success" ).fadeOut(3000);

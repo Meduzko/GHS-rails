@@ -133,9 +133,17 @@ header:after {
     z-index: 1;
 }
 .uk-offcanvas-bar {
+    .uk-icon > * {
+        transform: translate(-25px, 0);
+        
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+    }
     width: 100%;;
     background-color: #519a9c;
-    padding: 40px 40px;
+    padding: 40px 50px;
     .uk-parent {
         height: 65vh;
         a {

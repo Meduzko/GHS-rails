@@ -80,7 +80,7 @@ header {
             font-weight: normal;
         }
         @include desktop-and-up {
-            font-size: 32px;
+            font-size: 38px;
         }
     }
     .button-down {
@@ -141,35 +141,38 @@ header:after {
         width: 25px;
         height: 25px;
     }
-    width: 100%;;
+    width: 270px;
     background-color: #519a9c;
-    padding: 40px 50px;
-    .uk-parent {
-        height: 65vh;
-        a {
-            letter-spacing: 1px;
-            font-size: 16px;
-            font-family: 'Montserrat-SemiBold', Sans-serif;
-            color: #fff !important;
-            height: 30px;
-            border-bottom: 1px solid #fff;
-            padding-top: 15px;
-        }
-    }
-    .for_shareholder {
-        a {
-            font-size: 16px;
-            font-family: 'Montserrat-SemiBold', Sans-serif;
-            color: #fff !important;
-            letter-spacing: 1px;
-            .uk-margin-small-right {
-                margin-right: 0px !important;
+    @include mobile-only {
+        width: 100%;
+        padding: 40px 50px;
+        .uk-parent {
+            height: 65vh;
+            a {
+                letter-spacing: 1px;
+                font-size: 16px;
+                font-family: 'Montserrat-SemiBold', Sans-serif;
+                color: #fff !important;
+                height: 30px;
+                border-bottom: 1px solid #fff;
+                padding-top: 15px;
             }
         }
-        border:1px solid #fff;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .for_shareholder {
+            a {
+                font-size: 16px;
+                font-family: 'Montserrat-SemiBold', Sans-serif;
+                color: #fff !important;
+                letter-spacing: 1px;
+                .uk-margin-small-right {
+                    margin-right: 0px !important;
+                }
+            }
+            border:1px solid #fff;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

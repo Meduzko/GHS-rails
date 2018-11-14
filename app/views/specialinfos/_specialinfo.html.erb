@@ -3,7 +3,7 @@
             <div class="uk-margin">
                 <form class="uk-search uk-search-default">
                     <span class="uk-search-icon-flip" uk-search-icon></span>
-                    <input class="uk-search-input" type="search" placeholder="ПОШУК В РОЗДІЛІ">
+                    <input class="uk-search-input" type="search" placeholder="ПОШУК В РОЗДІЛІ" id="myInput2" onkeyup="myFunctionB()">
                 </form>
                 <!--<%= form_tag(documents_path, method: :get) do %>
                     <%= text_field_tag :term, params[:term] %>
@@ -22,7 +22,7 @@
                                 <dt></dt>
                                 -->
             </dl>
-            <ul uk-accordion ="multiple: true">
+            <ul uk-accordion ="multiple: true" id="myUL2">
                 <li class>
                     <a class="uk-accordion-title" href="#">ПІДРОЗДІЛ 1</a>
                     <div class="uk-accordion-content">

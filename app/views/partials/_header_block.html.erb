@@ -83,9 +83,11 @@
         <div class="uk-navbar-right uk-visible@m">
             <ul class="uk-navbar-nav">
                 <li>
-                    <% if !user_signed_in? %>
+                
+                    <% if !user_signed_in? && !admin_user_signed_in? %>
+                    <a class="uk-button uk-button-default " href="#" uk-toggle="target: #modal-close-default">ДЛЯ АКЦІОНЕРІВ</a>
                        <!-- <%= link_to "ДЛЯ АУКЦІОНЕРІВ", new_user_session_path, :class => 'uk-button uk-button-default' %> -->
-                        <a class="uk-button uk-button-default " href="#" uk-toggle="target: #modal-close-default">ДЛЯ АКЦІОНЕРІВ</a>
+                     <!--   <a class="uk-button uk-button-default " href="#" uk-toggle="target: #modal-close-default">ДЛЯ АКЦІОНЕРІВ</a> -->
                     <% end %>
                     <% if user_signed_in? %>
                         <div class="uk-inline">
@@ -142,7 +144,7 @@
 
                                     <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-                                    <h3>Title</h3>
+                                    <h3>Адмін</h3>
                                     <ul class="dropdown-menu">
                                         <% if admin_user_signed_in? %>
                                             <li><%#= link_to "Edit profile", edit_admin_user_registration_path %></li>
@@ -151,7 +153,7 @@
                                             <li><%#= link_to "Login", new_admin_user_session_path %></li>
                                         <% end %>
                                         <% if admin_user_signed_in? %>
-                                            <li><%= link_to "Logout", destroy_admin_user_session_path, method: :delete %></li>
+                                            <li><%= link_to "Вихід", destroy_admin_user_session_path, method: :delete %></li>
                                         <% end %>
                                     </ul>
                                 </div>

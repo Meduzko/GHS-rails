@@ -3,7 +3,7 @@ Run application
 ```
 bundle innstall
 rake db:migrate
-rais s
+rails s
 ```
 
 
